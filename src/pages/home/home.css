@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+#homezinho {
+    display: grid;
+    grid-template-rows: 75px 650px 50vh 40vh 70vh;
+    grid-template-columns: 100%;
+}
+
+#homezinho .background{
+    display: grid;
+    grid-template-rows: 70% 30%;
+    background-image: url(../../assets/home/img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;   
+} 
+
+
+#homezinho .background h2{
+    display: grid;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 120px;
+    color: aliceblue;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+
+#homezinho .botao{
+    display: grid;
+    width: 250px;
+    height: 60px;
+    background: #181B24;
+    opacity: 0.8;
+    border: 2px solid #fff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    justify-self: right;
+    margin-right: 50px;
+}
+
+
+#homezinho .botao a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+
+#homezinho .botao:hover{
+    background:rgba(0, 0, 0, 1);
+    color: #000;
+    box-shadow: inset 0 0 0 1px #838E83;
+}
+
+
+#homezinho{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+#homezinho h1{
+    display: grid;
+    height: auto;
+    font-family: 'Text Me One', sans-serif;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 50px;   
+}
+
+
+#homezinho p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 85%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+    text-justify: distribute;
+}
+
+
+#homezinho #contato{
+    display: grid;
+    margin-top: 0px;
+}
+
+#homezinho h2{
+    display: grid;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+
+#homezinho section form {
+    display: grid;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-bottom: 10vh;
+    margin-top: 0px;
+}
+
+
+#homezinho section form label{
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    width: 100%;
+    height: 4vh;
+    font-size: 20px;
+    padding-top: 12px;  
+}
+
+
+#homezinho section form button{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #181B24;
+}
+
+
+button:hover{
+    background:rgb(196, 196, 204);
+    color: #181B24;
+    box-shadow: inset 0 0 0 1px #838E83;
+}
+
+@media screen and (max-width: 1250px){
+    #homezinho{
+        grid-template-rows: 75px 800px 400px 600px 650px;
+
+    }
+             /* home*/
+    #homezinho .background{
+        background-size: 110% 800px;
+    }
+    #homezinho h2{
+        height: 35px;
+    }
+
+    #homezinho #contato{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #homezinho {
+        grid-template-rows: 75px 600px 400px 600px 650px;
+
+    }
+      /*home*/
+
+    #homezinho .background{
+        background-size: 100% 600px;
+    }
+    #homezinho .background h2{
+        font-size: 100px;
+    }
+    #homezinho .botao{
+        width: 200px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 790px){
+    #homezinho{
+        grid-template-rows: 60px 450px 480px 900px 600px;
+
+    }
+               /*home*/
+    #homezinho .background{
+        background-size: 100% 110%;
+    }
+    #homezinho .background h2{
+        font-size: 90px;
+    }
+    #homezinho .botao{
+        width: 180px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    #homezinho h2{
+        margin-bottom: 0px;
+        height: 35px;
+    }
+
+}
+
+@media screen and (max-width: 570px){
+    #homezinho{
+        grid-template-rows: 60px 400px 350px 820px 600px;
+
+    }
+    
+             /*home*/
+    #homezinho .background{
+        background-size: 130% 400px;
+    }
+    #homezinho .background h2{                
+        font-size: 70px;
+    }
+    #homezinho .botao{
+        width: 130px;
+        height: 35px;
+        font-size: 14px;
+    } 
+    #homezinho h1{
+        font-size: 30px;
+    }  
+    #homezinho p{
+        font-size: 16px;
+        text-align: justify;
+    } 
+    #homezinho h2{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 415px){
+    #homezinho{
+        grid-template-rows: 60px 50vh 520px 820px 550px;
+
+    }
+              /*home*/
+     #homezinho .background{
+        background-size: 170% 50vh;
+    }
+    #homezinho .background h2{                
+        font-size: 55px;
+    }
+    #homezinho .botao{
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }  
+    #homezinho h2{
+        font-size: 23px;
+    }
+}

@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#banana{
+    display: grid;
+    grid-template-columns: 11vw 11vw 11vw 11vw 11vw 11vw 11vw 11vw;
+    justify-self: center;
+    justify-content: center;
+    margin: 20px;
+    height: 200px;
+}
+
+#banana div img{
+    display: grid;
+    justify-self: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+#banana div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 200px;
+    align-items: center;
+    justify-items: center;
+}
+
+div .foto{
+    position: absolute;
+    opacity: 0;
+    animation: animacao 20s infinite;
+}
+
+@keyframes animacao{
+    25%{
+        opacity: 1;
+        transform:scale(1.1,1.1);
+    }
+    50%{
+        opacity: 0;
+    }  
+}
+
+.foto:nth-child(2){
+    animation-delay: 5s;
+}
+
+.foto:nth-child(3){
+    animation-delay: 10s;
+}
+
+
+@media screen and (max-width: 1200px){
+#banana{
+    height: 400px;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+#banana div img{
+    width: 155px;
+    height: 155px;
+}
+}
+
+
+@media screen and (max-width: 900px){
+
+#banana div img{
+    width: 120px;
+    height: 120px;
+}
+}
+
+@media screen and (max-width: 790px){
+    #banana{
+        margin-top: 40px;
+        grid-template-columns: 40vw 40vw;
+        height: 800px;
+        margin-bottom: 0%;
+    }
+
+    #banana div{
+        margin-left: auto;
+        margin-right: auto;
+        width: 180px;
+        height: 200px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #banana div img{
+        width: 160px;
+        height: 160px;
+    }
+}
+@media screen and (max-width: 570px){
+
+#banana{
+    margin-top: 10px;
+    grid-template-columns: 40vw 40vw;
+    height: 760px;
+    margin-bottom: 0%;
+}
+#banana div{
+    width: 140px;
+}
+
+#banana div img{
+    width: 120px;
+    height: 120px;
+}
+}
+
+@media screen and (max-width: 415px){
+#banana{
+    grid-template-columns: 160px 160px;
+
+}
+}

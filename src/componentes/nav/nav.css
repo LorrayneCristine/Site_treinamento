@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 75px;
+    background-image: url(../../assets/nav/img/fundo.2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+    opacity: 0.9;
+    align-items: center;
+}
+     
+
+header img{
+    display: grid;
+    width: auto;
+    height: 70px;
+    padding-left: 80px;
+    width: 100px;
+}
+
+
+header nav{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    align-self: center;
+}
+
+
+header nav a{
+    display: grid;
+    text-align: center;
+    text-decoration: none;
+    width: 20px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width: 900px){
+
+    header{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        height: 75px;
+        background-size: 100% 75px;
+    }
+
+    header img{
+        display: grid;
+        width: auto;
+        height: 50px;
+        padding-left: 20px;
+    }
+
+    header nav a{
+        display: grid;
+        text-align: center;
+        justify-self: center;
+        justify-content: center;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 790px){
+
+    header{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        height: 60px;
+        background-size: 100% 60px;
+
+
+    }
+
+
+    header img{
+        display: grid;
+        width: auto;
+        height: 50px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 570px){
+
+    header{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        height: 60px;
+        background-size: 100% 60px;
+    }
+
+    header nav{
+        grid-template-columns: auto auto auto auto;
+    }
+    header img{
+        display: grid;
+        width: auto;
+        height: 50px;
+        padding-left: 10px;
+    }
+
+    header nav a{
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        width: 30%;
+        font-size: 12px;
+        
+    }
+}
+
+@media screen and (max-width: 420px){
+    header{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        height: 60px;
+        background-size: 600px 60px;
+    }
+    header nav a{
+        font-size: 12px;
+    }
+}
